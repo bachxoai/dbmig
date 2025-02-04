@@ -1,0 +1,654 @@
+{
+    "tb_data_status_meta": [
+        {
+            "old": "`dbName_detail` varchar(20) NOT NULL COMMENT '세부DB명',",
+            "new": "`dbName_detail` varchar(200) NOT NULL COMMENT '세부DB명',"
+        },
+        {
+            "old": "`db_name` varchar(20) DEFAULT NULL COMMENT 'DB명',",
+            "new": "`db_name` varchar(200) DEFAULT NULL COMMENT 'DB명',"
+        }
+    ],
+    "tb_topic": [
+        {
+            "old": "",
+            "new": "`VIEW_COUNT` int(11) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`receive_email` tinyint(4) DEFAULT 0,"
+        }
+    ],
+    "m7_score": [
+        {
+            "old": "`지역코드` char(2) DEFAULT NULL",
+            "new": "`지역코드` char(2) DEFAULT NULL,"
+        }
+    ],
+    "tb_model_info": [
+        {
+            "old": "",
+            "new": "`ratio_1` varchar(20) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`ratio_2` varchar(20) DEFAULT NULL,"
+        }
+    ],
+    "wiki_item_master": [
+        {
+            "old": "`TITLE` varchar(1000) DEFAULT NULL COMMENT 'article name',",
+            "new": "`TITLE` varchar(1000) DEFAULT NULL COMMENT 'article name'"
+        }
+    ],
+    "tb_user_rnd": [
+        {
+            "old": "",
+            "new": "`project_mng_agency` varchar(100) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`project_mng_org` varchar(500) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`host_name` varchar(100) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`CREAT_DT` datetime DEFAULT NULL COMMENT '생성_일시',"
+        },
+        {
+            "old": "",
+            "new": "`CREAT_ID` bigint(20) DEFAULT NULL COMMENT '생성_ID',"
+        },
+        {
+            "old": "",
+            "new": "`UPDT_DT` datetime DEFAULT NULL COMMENT '수정_일시',"
+        },
+        {
+            "old": "",
+            "new": "`UPDT_ID` bigint(20) DEFAULT NULL COMMENT '수정_ID',"
+        }
+    ],
+    "vc_ntis_a_tb_0001_s": [
+        {
+            "old": "",
+            "new": "`NTIS_A_F_094` varchar(500) DEFAULT NULL COMMENT '연구책임자소속기관명',"
+        }
+    ],
+    "tb_menu": [
+        {
+            "old": "",
+            "new": "`PARENT_ID` bigint(20) NOT NULL,"
+        }
+    ],
+    "vc_ntb_a_tb_0001": [
+        {
+            "old": "`NTB_A_F_001` text DEFAULT NULL,",
+            "new": "`NTB_A_F_001` char(11) NOT NULL COMMENT '판매기술코드',"
+        },
+        {
+            "old": "`NTB_A_F_002` text DEFAULT NULL,",
+            "new": "`NTB_A_F_002` char(12) DEFAULT NULL COMMENT '기업코드',"
+        },
+        {
+            "old": "`NTB_A_F_003` text DEFAULT NULL,",
+            "new": "`NTB_A_F_003` varchar(100) DEFAULT NULL COMMENT '기업명',"
+        },
+        {
+            "old": "`NTB_A_F_004` double DEFAULT NULL,",
+            "new": "`NTB_A_F_004` varchar(2) DEFAULT NULL COMMENT '산업분류코드_세분류',"
+        },
+        {
+            "old": "`NTB_A_F_005` text DEFAULT NULL,",
+            "new": "`NTB_A_F_005` varchar(100) DEFAULT NULL COMMENT '산업분류_세분류',"
+        },
+        {
+            "old": "`NTB_A_F_006` double DEFAULT NULL,",
+            "new": "`NTB_A_F_006` varchar(4) DEFAULT NULL COMMENT '산업분류코드_중분류',"
+        },
+        {
+            "old": "`NTB_A_F_007` text DEFAULT NULL,",
+            "new": "`NTB_A_F_007` varchar(100) DEFAULT NULL COMMENT '산업분류_중분류',"
+        },
+        {
+            "old": "`NTB_A_F_008` double DEFAULT NULL,",
+            "new": "`NTB_A_F_008` varchar(6) DEFAULT NULL COMMENT '산업분류코드_대분류',"
+        },
+        {
+            "old": "`NTB_A_F_009` text DEFAULT NULL,",
+            "new": "`NTB_A_F_009` varchar(100) DEFAULT NULL COMMENT '산업분류_대분류',"
+        },
+        {
+            "old": "`NTB_A_F_010` text DEFAULT NULL,",
+            "new": "`NTB_A_F_010` varchar(6) DEFAULT NULL COMMENT '기술분류코드_세분류',"
+        },
+        {
+            "old": "`NTB_A_F_011` text DEFAULT NULL,",
+            "new": "`NTB_A_F_011` varchar(100) DEFAULT NULL COMMENT '기술분류_세분류',"
+        },
+        {
+            "old": "`NTB_A_F_012` text DEFAULT NULL,",
+            "new": "`NTB_A_F_012` char(2) DEFAULT NULL COMMENT '기술분류코드_대분류',"
+        },
+        {
+            "old": "`NTB_A_F_013` text DEFAULT NULL,",
+            "new": "`NTB_A_F_013` varchar(100) DEFAULT NULL COMMENT '기술분류_대분류',"
+        },
+        {
+            "old": "`NTB_A_F_014` text DEFAULT NULL,",
+            "new": "`NTB_A_F_014` text DEFAULT NULL COMMENT '기술명',"
+        },
+        {
+            "old": "`NTB_A_F_015` double DEFAULT NULL,",
+            "new": "`NTB_A_F_015` text DEFAULT NULL COMMENT '영문기술명',"
+        },
+        {
+            "old": "`NTB_A_F_016` bigint(20) DEFAULT NULL,",
+            "new": "`NTB_A_F_016` char(8) DEFAULT NULL COMMENT '수집일',"
+        },
+        {
+            "old": "`NTB_A_F_017` bigint(20) DEFAULT NULL,",
+            "new": "`NTB_A_F_017` char(8) DEFAULT NULL COMMENT '등록일',"
+        },
+        {
+            "old": "`NTB_A_F_018` text DEFAULT NULL,",
+            "new": "`NTB_A_F_018` varchar(2000) DEFAULT NULL COMMENT '키워드',"
+        },
+        {
+            "old": "`NTB_A_F_019` text DEFAULT NULL,",
+            "new": "`NTB_A_F_019` text DEFAULT NULL COMMENT '개요및특징',"
+        },
+        {
+            "old": "`NTB_A_F_020` double DEFAULT NULL,",
+            "new": "`NTB_A_F_020` varchar(100) DEFAULT NULL COMMENT '개발상태코드',"
+        },
+        {
+            "old": "`NTB_A_F_021` text DEFAULT NULL,",
+            "new": "`NTB_A_F_021` varchar(100) DEFAULT NULL COMMENT '개발상태',"
+        },
+        {
+            "old": "`NTB_A_F_022` text DEFAULT NULL,",
+            "new": "`NTB_A_F_022` mediumtext DEFAULT NULL COMMENT '응용분야',"
+        },
+        {
+            "old": "`NTB_A_F_023` text DEFAULT NULL,",
+            "new": "`NTB_A_F_023` varchar(2) DEFAULT NULL COMMENT '이전여부',"
+        },
+        {
+            "old": "`NTB_A_F_024` text DEFAULT NULL,",
+            "new": "`NTB_A_F_024` varchar(100) DEFAULT NULL COMMENT '희망거래유형',"
+        },
+        {
+            "old": "`NTB_A_F_025` text DEFAULT NULL,",
+            "new": "`NTB_A_F_025` mediumtext DEFAULT NULL COMMENT '기술이전조건',"
+        },
+        {
+            "old": "`NTB_A_F_026` text DEFAULT NULL,",
+            "new": "`NTB_A_F_026` varchar(4) DEFAULT NULL COMMENT '기술이전조건_상태',"
+        },
+        {
+            "old": "`NTB_A_F_027` double DEFAULT NULL,",
+            "new": "`NTB_A_F_027` varchar(100) DEFAULT NULL COMMENT '기술이전금액코드',"
+        },
+        {
+            "old": "`NTB_A_F_028` text DEFAULT NULL,",
+            "new": "`NTB_A_F_028` varchar(100) DEFAULT NULL COMMENT '기술이전금액',"
+        },
+        {
+            "old": "`NTB_A_F_029` text DEFAULT NULL,",
+            "new": "`NTB_A_F_029` mediumtext DEFAULT NULL COMMENT '사업화적용실적',"
+        },
+        {
+            "old": "`NTB_A_F_030` text DEFAULT NULL,",
+            "new": "`NTB_A_F_030` varchar(4) DEFAULT NULL COMMENT '사업화적용실적_상태',"
+        },
+        {
+            "old": "`NTB_A_F_031` text DEFAULT NULL,",
+            "new": "`NTB_A_F_031` mediumtext DEFAULT NULL COMMENT '도입시고려사항',"
+        },
+        {
+            "old": "`NTB_A_F_032` text DEFAULT NULL,",
+            "new": "`NTB_A_F_032` varchar(4) DEFAULT NULL COMMENT '도입시고려사항_상태',"
+        },
+        {
+            "old": "`NTB_A_F_033` double DEFAULT NULL,",
+            "new": "`NTB_A_F_033` varchar(100) DEFAULT NULL COMMENT '담당자전화번호',"
+        },
+        {
+            "old": "`NTB_A_F_034` text DEFAULT NULL,",
+            "new": "`NTB_A_F_034` varchar(100) DEFAULT NULL COMMENT '개발자회사',"
+        },
+        {
+            "old": "`NTB_A_F_035` text DEFAULT NULL,",
+            "new": "`NTB_A_F_035` varchar(100) DEFAULT NULL COMMENT '개발자전화번호',"
+        },
+        {
+            "old": "`NTB_A_F_036` double DEFAULT NULL,",
+            "new": "`NTB_A_F_036` char(1) DEFAULT NULL COMMENT '요청방법코드',"
+        },
+        {
+            "old": "`NTB_A_F_037` text DEFAULT NULL,",
+            "new": "`NTB_A_F_037` varchar(100) DEFAULT NULL COMMENT '요청방법',"
+        },
+        {
+            "old": "`NTB_A_F_038` text DEFAULT NULL,",
+            "new": "`NTB_A_F_038` varchar(100) DEFAULT NULL COMMENT '판매가격',"
+        },
+        {
+            "old": "`NTB_A_F_039` text DEFAULT NULL,",
+            "new": "`NTB_A_F_039` varchar(17) DEFAULT NULL COMMENT '특허출원번호',"
+        },
+        {
+            "old": "`NTB_A_F_040` text DEFAULT NULL,",
+            "new": "`NTB_A_F_040` varchar(8) DEFAULT NULL COMMENT '특허출원일자',"
+        },
+        {
+            "old": "`NTB_A_F_041` double DEFAULT NULL,",
+            "new": "`NTB_A_F_041` varchar(13) DEFAULT NULL COMMENT '특허공개번호',"
+        },
+        {
+            "old": "`NTB_A_F_042` text DEFAULT NULL,",
+            "new": "`NTB_A_F_042` varchar(8) DEFAULT NULL COMMENT '특허공개일자',"
+        },
+        {
+            "old": "`NTB_A_F_043` double DEFAULT NULL,",
+            "new": "`NTB_A_F_043` varchar(13) DEFAULT NULL COMMENT '특허공고번호',"
+        },
+        {
+            "old": "`NTB_A_F_044` text DEFAULT NULL,",
+            "new": "`NTB_A_F_044` varchar(8) DEFAULT NULL COMMENT '특허공고일자',"
+        },
+        {
+            "old": "`NTB_A_F_045` double DEFAULT NULL,",
+            "new": "`NTB_A_F_045` varchar(15) DEFAULT NULL COMMENT '특허등록번호',"
+        },
+        {
+            "old": "`NTB_A_F_046` text DEFAULT NULL,",
+            "new": "`NTB_A_F_046` varchar(8) DEFAULT NULL COMMENT '특허등록일자',"
+        },
+        {
+            "old": "`NTB_A_F_047` text DEFAULT NULL,",
+            "new": "`NTB_A_F_047` varchar(2000) DEFAULT NULL COMMENT '발명의명칭',"
+        },
+        {
+            "old": "`NTB_A_F_048` text DEFAULT NULL,",
+            "new": "`NTB_A_F_048` varchar(2000) DEFAULT NULL COMMENT '발명자',"
+        },
+        {
+            "old": "`NTB_A_F_049` text DEFAULT NULL,",
+            "new": "`NTB_A_F_049` varchar(100) DEFAULT NULL COMMENT '출원인',"
+        },
+        {
+            "old": "`NTB_A_F_050` text DEFAULT NULL,",
+            "new": "`NTB_A_F_050` varchar(2000) DEFAULT NULL COMMENT 'IPC',"
+        },
+        {
+            "old": "`NTB_A_F_051` text DEFAULT NULL,",
+            "new": "`NTB_A_F_051` mediumtext DEFAULT NULL COMMENT '초록',"
+        },
+        {
+            "old": "`NTB_A_F_052` text DEFAULT NULL,",
+            "new": "`NTB_A_F_052` varchar(11) DEFAULT NULL COMMENT '과제고유번호',"
+        },
+        {
+            "old": "`NTB_A_F_053` text DEFAULT NULL,",
+            "new": "`NTB_A_F_053` varchar(100) DEFAULT NULL COMMENT '과제세부번호',"
+        },
+        {
+            "old": "`NTB_A_F_054` text DEFAULT NULL,",
+            "new": "`NTB_A_F_054` varchar(1000) DEFAULT NULL COMMENT '과제명칭_국문',"
+        },
+        {
+            "old": "`NTB_A_F_055` text DEFAULT NULL,",
+            "new": "`NTB_A_F_055` varchar(1000) DEFAULT NULL COMMENT '과제명칭_영문',"
+        },
+        {
+            "old": "`NTB_A_F_056` text DEFAULT NULL,",
+            "new": "`NTB_A_F_056` varchar(100) DEFAULT NULL COMMENT '예산사업명',"
+        },
+        {
+            "old": "`NTB_A_F_057` text DEFAULT NULL,",
+            "new": "`NTB_A_F_057` varchar(100) DEFAULT NULL COMMENT '기관사업명',"
+        },
+        {
+            "old": "`NTB_A_F_058` text DEFAULT NULL,",
+            "new": "`NTB_A_F_058` varchar(100) DEFAULT NULL COMMENT '연구책임자명',"
+        },
+        {
+            "old": "`NTB_A_F_059` text DEFAULT NULL,",
+            "new": "`NTB_A_F_059` varchar(100) DEFAULT NULL COMMENT '발주기관명',"
+        },
+        {
+            "old": "`NTB_A_F_060` text DEFAULT NULL,",
+            "new": "`NTB_A_F_060` varchar(100) DEFAULT NULL COMMENT '주관연구기관명',"
+        },
+        {
+            "old": "`NTB_A_F_061` text DEFAULT NULL,",
+            "new": "`NTB_A_F_061` varchar(100) DEFAULT NULL COMMENT '전문기관명',"
+        },
+        {
+            "old": "`NTB_A_F_062` text DEFAULT NULL,",
+            "new": "`NTB_A_F_062` varchar(100) DEFAULT NULL COMMENT '부처명',"
+        },
+        {
+            "old": "`NTB_A_F_063` double DEFAULT NULL,",
+            "new": "`NTB_A_F_063` varchar(4) DEFAULT NULL COMMENT '기준년도',"
+        },
+        {
+            "old": "`NTB_A_F_064` text DEFAULT NULL,",
+            "new": "`NTB_A_F_064` varchar(4) DEFAULT NULL COMMENT '보안과제여부',"
+        },
+        {
+            "old": "`NTB_A_F_065` text DEFAULT NULL,",
+            "new": "`NTB_A_F_065` varchar(10) DEFAULT NULL COMMENT '당해년도_연구시작일',"
+        },
+        {
+            "old": "`NTB_A_F_066` text DEFAULT NULL,",
+            "new": "`NTB_A_F_066` varchar(10) DEFAULT NULL COMMENT '당해년도_연구종료일',"
+        },
+        {
+            "old": "`NTB_A_F_067` text DEFAULT NULL,",
+            "new": "`NTB_A_F_067` varchar(10) DEFAULT NULL COMMENT '총연구기간_연구시작일',"
+        },
+        {
+            "old": "`NTB_A_F_068` text DEFAULT NULL,",
+            "new": "`NTB_A_F_068` varchar(10) DEFAULT NULL COMMENT '총연구기간_연구종료일',"
+        },
+        {
+            "old": "`NTB_A_F_069` text DEFAULT NULL,",
+            "new": "`NTB_A_F_069` varchar(100) DEFAULT NULL COMMENT '과학기술대분류',"
+        },
+        {
+            "old": "`NTB_A_F_070` text DEFAULT NULL,",
+            "new": "`NTB_A_F_070` varchar(100) DEFAULT NULL COMMENT '과학기술중분류',"
+        },
+        {
+            "old": "`NTB_A_F_071` text DEFAULT NULL,",
+            "new": "`NTB_A_F_071` varchar(100) DEFAULT NULL COMMENT '과학기술소분류',"
+        },
+        {
+            "old": "`NTB_A_F_072` text DEFAULT NULL,",
+            "new": "`NTB_A_F_072` varchar(100) DEFAULT NULL COMMENT '연구수행주체',"
+        },
+        {
+            "old": "`NTB_A_F_073` text DEFAULT NULL,",
+            "new": "`NTB_A_F_073` varchar(100) DEFAULT NULL COMMENT '연구개발단계',"
+        },
+        {
+            "old": "`NTB_A_F_074` text DEFAULT NULL,",
+            "new": "`NTB_A_F_074` varchar(100) DEFAULT NULL COMMENT '기술수명주기',"
+        },
+        {
+            "old": "`NTB_A_F_075` text DEFAULT NULL,",
+            "new": "`NTB_A_F_075` varchar(100) DEFAULT NULL COMMENT '지역구분',"
+        },
+        {
+            "old": "`NTB_A_F_076` text DEFAULT NULL,",
+            "new": "`NTB_A_F_076` varchar(100) DEFAULT NULL COMMENT '6T기술명',"
+        },
+        {
+            "old": "`NTB_A_F_077` text DEFAULT NULL,",
+            "new": "`NTB_A_F_077` varchar(100) DEFAULT NULL COMMENT '적용분야_대분류',"
+        },
+        {
+            "old": "`NTB_A_F_078` text DEFAULT NULL,",
+            "new": "`NTB_A_F_078` varchar(100) DEFAULT NULL COMMENT '적용분야_중분류',"
+        },
+        {
+            "old": "`NTB_A_F_079` text DEFAULT NULL,",
+            "new": "`NTB_A_F_079` varchar(100) DEFAULT NULL COMMENT '적용분야_소분류',"
+        },
+        {
+            "old": "`NTB_A_F_080` text DEFAULT NULL,",
+            "new": "`NTB_A_F_080` varchar(100) DEFAULT NULL COMMENT '정책사업여부',"
+        },
+        {
+            "old": "`NTB_A_F_081` text DEFAULT NULL",
+            "new": "`NTB_A_F_081` varchar(100) DEFAULT NULL COMMENT 'URL',"
+        }
+    ],
+    "wiki_itemlist_tb": [
+        {
+            "old": "",
+            "new": "`link_to_this_page` double DEFAULT NULL,"
+        },
+        {
+            "old": "`EPV` double DEFAULT NULL,",
+            "new": "`EPV` double DEFAULT NULL"
+        }
+    ],
+    "kpa_app_chg_document": [
+        {
+            "old": "`LDT` datetime DEFAULT NULL COMMENT '등록일자',",
+            "new": "`LDT` date DEFAULT NULL COMMENT '등록일자',"
+        },
+        {
+            "old": "`EDT` datetime DEFAULT NULL COMMENT '수정일자',",
+            "new": "`EDT` date DEFAULT NULL COMMENT '수정일자',"
+        }
+    ],
+    "tb_role_menu": [
+        {
+            "old": "`role_id` bigint(20) NOT NULL,",
+            "new": "`role_id` varchar(20) NOT NULL,"
+        }
+    ],
+    "tb_user": [
+        {
+            "old": "`user_nm` varchar(50) NOT NULL COMMENT 'User Name',",
+            "new": "`user_nm` varchar(150) NOT NULL COMMENT 'User Name',"
+        },
+        {
+            "old": "`password` varchar(150) NOT NULL COMMENT 'Password',",
+            "new": "`password` varchar(500) NOT NULL COMMENT 'Password',"
+        }
+    ],
+    "tb_user_request_tracking": [
+        {
+            "old": "`REQUEST_DATA` blob DEFAULT NULL COMMENT 'Request body(JSON)',",
+            "new": "`REQUEST_DATA` longblob DEFAULT NULL COMMENT 'Request body(JSON)',"
+        }
+    ],
+    "tb_user_type": [
+        {
+            "old": "",
+            "new": "`id` bigint(20) NOT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`description` varchar(200) NOT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`READ_ONLY` tinyint(4) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`CREAT_DT` datetime DEFAULT NULL COMMENT '생성_일시',"
+        },
+        {
+            "old": "",
+            "new": "`CREAT_ID` bigint(20) DEFAULT NULL COMMENT '생성_ID',"
+        },
+        {
+            "old": "",
+            "new": "`UPDT_DT` datetime DEFAULT NULL COMMENT '수정_일시',"
+        },
+        {
+            "old": "",
+            "new": "`UPDT_ID` bigint(20) DEFAULT NULL COMMENT '수정_ID',"
+        }
+    ],
+    "kr_assignment_pub": [
+        {
+            "old": "`PUBLICATION_DATE` datetime DEFAULT NULL,",
+            "new": "`PUBLICATION_DATE` date DEFAULT NULL,"
+        },
+        {
+            "old": "`REG_DT` datetime DEFAULT current_timestamp()",
+            "new": "`REG_DT` datetime DEFAULT current_timestamp(),"
+        },
+        {
+            "old": "",
+            "new": "`name` varchar(50) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`engine` varchar(50) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`version` int(11) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`row_format` varchar(50) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`rows_cnt` int(11) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`avg_row_length` int(11) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`data_length` int(11) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`max_data_length` bigint(20) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`index_length` int(11) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`data_free` int(11) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`auto_increment` int(11) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`create_time` varchar(50) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`update_time` varchar(50) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`check_time` varchar(50) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`collation` varchar(50) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`checksum` varchar(50) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`create_options` varchar(50) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`comment` varchar(64) DEFAULT NULL"
+        }
+    ],
+    "tb_user_company": [
+        {
+            "old": "",
+            "new": "`CREAT_DT` datetime DEFAULT NULL COMMENT '생성_일시',"
+        },
+        {
+            "old": "",
+            "new": "`CREAT_ID` bigint(20) DEFAULT NULL COMMENT '생성_ID',"
+        },
+        {
+            "old": "",
+            "new": "`UPDT_DT` datetime DEFAULT NULL COMMENT '수정_일시',"
+        },
+        {
+            "old": "",
+            "new": "`UPDT_ID` bigint(20) DEFAULT NULL COMMENT '수정_ID',"
+        }
+    ],
+    "tb_role": [
+        {
+            "old": "`role_id` bigint(20) NOT NULL AUTO_INCREMENT,",
+            "new": "`role_id` varchar(20) NOT NULL,"
+        },
+        {
+            "old": "`CREAT_DT` datetime DEFAULT NULL COMMENT '생성_일시',",
+            "new": "`CREAT_DT` datetime DEFAULT NULL,"
+        },
+        {
+            "old": "`CREAT_ID` bigint(20) DEFAULT NULL COMMENT '생성_ID',",
+            "new": "`CREAT_ID` bigint(20) DEFAULT NULL,"
+        },
+        {
+            "old": "`UPDT_DT` datetime DEFAULT NULL COMMENT '수정_일시',",
+            "new": "`UPDT_DT` datetime DEFAULT NULL,"
+        },
+        {
+            "old": "`UPDT_ID` bigint(20) DEFAULT NULL COMMENT '수정_ID',",
+            "new": "`UPDT_ID` bigint(20) DEFAULT NULL,"
+        }
+    ],
+    "tb_market_bookmark": [
+        {
+            "old": "",
+            "new": "`related_product` text DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`except_product` text DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`related_industry` text DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`related_industry_nm` text DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`except_industry` text DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`except_industry_nm` text DEFAULT NULL,"
+        }
+    ],
+    "tb_item_bookmark": [
+        {
+            "old": "",
+            "new": "`target_kor` varchar(100) DEFAULT NULL COMMENT 'Item keyword korean',"
+        },
+        {
+            "old": "",
+            "new": "`tech_cate` varchar(50) DEFAULT NULL COMMENT 'Technology category',"
+        },
+        {
+            "old": "",
+            "new": "`item_cate` varchar(50) DEFAULT NULL COMMENT 'Item category',"
+        },
+        {
+            "old": "",
+            "new": "`related_item` varchar(500) DEFAULT NULL,"
+        },
+        {
+            "old": "",
+            "new": "`related_item_kor` varchar(500) DEFAULT NULL,"
+        }
+    ]
+}
